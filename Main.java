@@ -1,6 +1,4 @@
-from pathlib import Path
-
-code = r'''import javax.swing.*;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
@@ -558,7 +556,3 @@ public class Main extends JFrame {
         });
     }
 }
-'''
-path = Path("/mnt/data/Main.java")
-path.write_text(code, encoding="utf-8")
-print(f"Created {path} ({len(code.splitlines())} lines).")
